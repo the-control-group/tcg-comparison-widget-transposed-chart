@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <title>Tests</title>
+  <script src="../../webcomponentsjs/webcomponents.js"></script>
+  <script src="../../web-component-tester/browser.js"></script>
+  <link rel="import" href="../tcg-comparison-widget-transposed-chart.html">
+</head>
+<body>
+<tcg-comparison-widget-transposed-chart
+  chart-title="Test"
+  chart-data-series="[{'data': [ [1422748800000, 500], [1422835200000, 1000], [1422921600000, 3000], [1423008000000, 4000], [1423094400000, 3000], [1423180800000, 2000], [1423267200000, 1700] ]}]"
+  chart-data-closable="true">
+</tcg-comparison-widget-transposed-chart>
+<script>
+  window.addEventListener('polymer-ready', function(e) {
+    var transposedChart = document.querySelector('tcg-comparison-widget-transposed-chart'),
+        chart = transposedChart.$.chart;
+
+    suite('<tcg-comparison-widget>', function () {
+      test('initializes', function () {
+        assert(transposedChart._readied);
+      });
+      test('has chart', function () {
+        assert(chart)
+      });
+    });
+  });
+</script>
+</body>
+</html>

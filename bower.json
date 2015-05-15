@@ -1,0 +1,35 @@
+{
+  "name": "tcg-comparison-widget-transposed-chart",
+  "version": "0.0.1",
+  "authors": [
+    "Darren Labey <darren.labey@thecontrolgroup.com>"
+  ],
+  "description": "Re-usable Polymer 0.5.* comparison widget transposed chart that can be used to display a chart.",
+  "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
+    "tcg",
+    "comparison",
+    "widget",
+    "transposed",
+    "chart"
+  ],
+  "main": "tcg-comparison-widget-transposed-chart.html",
+  "license": "MIT",
+  "homepage": "https://github.com/the-control-group/tcg-comparison-widget-transposed-chart/",
+  "ignore": [
+    "/.*",
+    "/tests/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5",
+    "polymer-core-icons": "Polymer/core-icons#~0.5",
+    "highcharts": "highslide-software/highcharts-release#~v4.1",
+    "lodash": "lodash/lodash#~v3.8",
+    "numeral-js": "adamwdraper/Numeral-js#~1.5"
+  },
+  "devDependencies": {
+    "web-component-tester": "*"
+  }
+}
